@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    /> -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="weather-app">
+      <div class="container">
+        <h3 class="brand">the weather</h3>
+      <div>
+      <h1 class="temp">16&#176;</h1>
+      <div class="city-time">
+        <h1 class="name">london</h1>
+        <small>
+          <span class="time">06:09</span>
+          -
+          <span class="date"> monday Sep 19 </span>
+        </small>
+      </div>
+      <div class="weather">
+        <img
+          src="./icons/day/113.png"
+          class="icon"
+          alt="icon"
+          width="50"
+          height="50"
+        />
+        <span class="condition">cloudy</span>
+      </div>
+    </div>
+</div>
+    <div class="panel">
+      <form id="locationInput">
+        <input type="text"
+        class="search"
+        placeholder="Search Location..." 
+        />
+        <button type="submit" class="submit">
+            <i class="fas fa-search"></i>
+        </button>
+      </form>
+      <ul class="cities">
+          <li class="city">New York</li>
+          <li class="city">california</li>
+          <li class="city">paris</li>
+          <li class="city">tokyo</li>
+      </ul>
+      <ul class="details">
+          <h4>weather details</h4>
+          <li>
+                <span>cloudy</span>
+                <span class="cloud">89%</span>
+          </li>
+          <li>
+                <span>humidity</span>
+                <span class="humidity">64%</span>
+          </li>
+          <li>
+              <span>wind</span>
+              <span class="wind">8km/h</span>
+          </li>
+      </ul>
+    </div>
+</div>
+    <script src="./main.js"></script>
+  </body>
+</html>
